@@ -1,4 +1,4 @@
-with src_host as (
+with src_hosts as (
     select
         *
     from 
@@ -8,7 +8,7 @@ with src_host as (
 select 
     id as host_id
     , name as host_name
-    , IS_SUPERHOST
-    , CREATED_AT
-    , UPDATED_AT
+    , is_superhost
+    , created_at
+    , updated_at
 from src_hosts
